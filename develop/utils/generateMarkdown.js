@@ -74,8 +74,8 @@ function generateMarkdown(data) {
 
   ## Links
 
-  * Live/Deployed Application: (https://${data.username}.github.io/${data.repository}/)
-  * Github Repo: (https://github.com/${data.username}/${data.repository}/)
+  * Live/Deployed Application: (https://${data.username}.github.io/${data.repo}/)
+  * Github Repo: (https://github.com/${data.username}/${data.repo}/)
 
   ## Contributions
 
