@@ -21,16 +21,35 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license === "apache-2.0") {
-    return `(https://www.apache.org/licenses/LICENSE-2.0)`
-  } else if (license === 'BSD 3-Clause "New" or "Revised"') {
-    return `(https://choosealicense.com/licenses/bsd-3-clause/)`
-  } else if (license === 'GNU General Public License v3.0') {
-    return `(https://www.gnu.org/licenses/gpl-3.0.en.html)`
-  } else if (license === 'MIT') {
-    return `(https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)`
-  } else {
-    return ""
+//   if (license === "apache-2.0") {
+//     return `(https://www.apache.org/licenses/LICENSE-2.0)`
+//   } else if (license === 'BSD 3-Clause "New" or "Revised"') {
+//     return `(https://choosealicense.com/licenses/bsd-3-clause/)`
+//   } else if (license === 'GNU General Public License v3.0') {
+//     return `(https://www.gnu.org/licenses/gpl-3.0.en.html)`
+//   } else if (license === 'MIT') {
+//     return `(https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)`
+//   } else {
+//     return ""
+//   }
+
+// refactored to use switch
+  switch(license) {
+    case 'apache-2.0':
+      return `(https://www.apache.org/licenses/LICENSE-2.0)`;
+      break;
+    case 'BSD 3-Clause "New" or "Revised':
+      return `(https://choosealicense.com/licenses/bsd-3-clause/)`;
+      break;
+    case 'GNU General Public License v3.0':
+      return `(https://www.gnu.org/licenses/gpl-3.0.en.html)`;
+      break;
+    case 'MIT':
+      return `(https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)`
+      break;
+    case '':
+      return ''
+      break;
   }
 };
 
