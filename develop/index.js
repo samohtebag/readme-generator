@@ -21,7 +21,7 @@ const questions = [
     },
 
     {
-        name: 'project title',
+        name: 'title',
         message: 'Please enter your project title, exactly how it reads on Github ',
         type: 'input',
         validate: function (answer) {

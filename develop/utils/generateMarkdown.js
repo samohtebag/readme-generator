@@ -77,16 +77,17 @@ function generateMarkdown(data) {
   ## Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
-    * [License](#license)
     * [Contributions](#contributions)
     * [Tests](#tests)
     * [Questions](#questions)
+    * [License](#license)
 
-  
+  <a name="installation"></a>
   ## Installation
 
   ${data.installation}
 
+  <a name="usage"></a>
   ## Usage
 
   ${data.usage}
@@ -96,20 +97,27 @@ function generateMarkdown(data) {
   * Live/Deployed Application: (https://${data.username}.github.io/${data.repo}/)
   * Github Repo: (https://github.com/${data.username}/${data.repo}/)
 
+
+  <a name="contributions"></a>
   ## Contributions
 
   ${data.contributions}
 
+  <a name="test"></a>
   ## Tests
 
   ${data.tests}
 
+  <a name="questions"></a>
   ## Questions
 
   [![GitHub](https://img.shields.io/badge/Github-Click%20Here-orange)](https://github.com/${data.username}) 
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Click%20Here-yellowgreen)](https://www.linkedin.com/in/gabriel-thomas513/)
 
   You may contact me via email ($[data.email]) with any questions regarding this project or anything else you see!
+
+  <a name="license"></a>
+  ## License
 `;
 }
 

@@ -1,4 +1,4 @@
-# undefined
+# readme-generator
 
   [![MIT](https://img.shields.io/badge/license-MIT-green?style=plastic)];
   (https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt);
